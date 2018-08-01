@@ -32,10 +32,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
   
-  if (1..9).to_a.include?(input)
-    puts "Playing #{songs[input]}"
-    elsif songs.include?(input)
-    puts "Playing #{songs[input]}"
+  songs.each_with_index
   else
     "Invalid input, please try again"
   end
