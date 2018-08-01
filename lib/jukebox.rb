@@ -33,7 +33,7 @@ def play(songs)
   input = gets.chomp
   
   songs.each_with_index |index, song|
-  if input.to_i == 
+  if input.to_i == (index + 1) || input == song
   
   else
     "Invalid input, please try again"
